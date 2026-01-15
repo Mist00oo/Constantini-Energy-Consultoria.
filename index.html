@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantini Energy | Consultoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="badge">CONSULTORIA TRIBUTÁRIA ESPECIALIZADA</div>
+        <h1>Você está pagando mais Energia do que consome?</h1>
+        <p>Milhares de brasileiros têm direito à restituição de impostos cobrados indevidamente. Descubra agora o seu valor com a Constantini Energy.</p>
+    </header>
+
+    <div class="container">
+        <div class="info-text">
+            <h2>Como funciona o Direito de Restituição?</h2>
+            <p>O STJ decidiu que o ICMS deve incidir apenas sobre a energia consumida, e não sobre as tarifas de transmissão (TUST/TUSD).</p>
+            <ul class="feature-list">
+                <li>Recuperação dos últimos 60 meses (5 anos).</li>
+                <li>Processo 100% legal e fundamentado.</li>
+                <li>Análise gratuita da sua fatura.</li>
+            </ul>
+        </div>
+
+        <section class="calculator-card">
+            <h3>Simulador de Crédito</h3>
+            <p class="label-text">Valor médio da sua conta mensal:</p>
+            
+            <input type="range" id="billRange" min="100" max="5000" step="50" value="500">
+            
+            <div class="bill-display">
+                Fatura: R$ <span id="billValue">500</span>
+            </div>
+
+            <div class="result-box">
+                <span class="result-label">Estimativa acumulada:</span>
+                <div id="totalResult">R$ 1.111,50</div>
+            </div>
+
+            <a href="#" id="waLink" target="_blank" class="cta-button">
+                FALAR COM CONSULTOR AGORA
+            </a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Revisão Energética.</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>

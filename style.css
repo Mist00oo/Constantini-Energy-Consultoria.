@@ -1,0 +1,77 @@
+:root {
+    --primary: #00df81;
+    --dark-bg: #0a0f18;
+    --card-bg: #161f2c;
+    --text-white: #ffffff;
+    --text-muted: #94a3b8;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-white);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 140px;
+    background: radial-gradient(circle at top, #1e293b 0%, #0a0f18 100%);
+}
+
+.badge {
+    background: rgba(0,223,129,0.1);
+    color: var(--primary);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid var(--primary);
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: -80px auto 40px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.calculator-card {
+    background: var(--card-bg);
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.bill-display { font-size: 1.8rem; font-weight: bold; margin: 20px 0; color: var(--primary); }
+
+.result-box {
+    background: rgba(0,0,0,0.3);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary);
+    margin-bottom: 25px;
+}
+
+#totalResult { font-size: 3rem; font-weight: 800; color: var(--primary); }
+
+.cta-button {
+    display: block;
+    background: #25d366;
+    color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; margin-top: -40px; }
+}
